@@ -1,7 +1,7 @@
 # CIS2858Project1
 Project 1 for CIS 2858
 
-#Project Requirements
+# Project Requirements
 This project requires creating a Java EE e-commerce application for out new client, a local farmer in the Michigan area. The farmer lives near the US-Canadian border and wishes to be able to sell his products in both countries. Each country has their own system for deciding expiration dates and the farmer’s current code is getting out of hand. Using what we know about Injecting and Qualifiers, let’s give our client a dependable solution.
 
 
