@@ -10,18 +10,26 @@ name, price, expirationDate, category
 Create a category enum with options for MEAT, PRODUCE, DAIRY
 Create a FoodService to create Food POJOs.
 The Interface for GenerateExperationDate will have two implementations, one for the CFIA (Canadian Food Inspection Agency) and one for the FDA (Federal Food and Drug Administration). As well as one to mock dates for integration tests. GenerateExperationDate will have one input parameter, category;
+<ul>
+  <li>
 @CFIA
 <ul>
 <li>Meat - 7 days after the current date</li>
 <li>Produce - 10 days after the current date</li>
 <li>Dairy - 6 days after the current date</li>
   </ul>
+  </li>
+  <li>
 @FDA
 <ul>
 <li>Meat - 5 days</li>
 <li>Produce - 10 days</li>
 <li>Dairy -  5 days</li>
   </ul>
+  </li>
+  <li>
 @MockGenerator
+  </li>
+  </ul>
 As Java Craftsman we also need to implement a reliable LoggingInterceptor to keep a record of generating expiration dates in case of an audit.
 Our final product should be implementing our FDA expiration date generator, because the farmer has expressed that he will begin his business operations in the US.
